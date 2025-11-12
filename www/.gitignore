@@ -1,0 +1,35 @@
+# Écrire le contenu dans .gitignore
+writeLines('
+# Fichiers R
+.Rhistory
+.RData
+.Rproj.user
+.Ruserdata
+*.Rproj
+
+# Fichiers système
+.DS_Store
+Thumbs.db
+*.log
+
+# Fichiers de build
+*.pdf
+*.html
+/man
+/NAMESPACE
+
+# Dossiers temporaires
+/cache/
+/tmp/
+/logs/
+/node_modules/
+/.venv/
+
+# Données sensibles (optionnel - décommentez si besoin)
+# *.csv
+# *.xlsx
+# *.rds
+# *.rda
+.env
+config.yml
+', '.gitignore')
